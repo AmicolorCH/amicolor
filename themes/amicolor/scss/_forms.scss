@@ -1,0 +1,49 @@
+form{
+
+    // remove the blue border
+    textarea:hover,
+    input:hover,
+    textarea:active,
+    input:active,
+    textarea:focus,
+    input:focus,
+    button:focus,
+    button:active,
+    button:hover{
+        outline:0px !important;
+        -webkit-appearance:none;
+    }
+
+    .form-group{
+        margin-top: 20px;
+
+        .label{
+            color: $primary-text;
+            font-size: 0.875rem;
+            margin-bottom: 5px;
+        }
+        input, textarea{
+            border: 1px solid $secondary;
+            height: 35px;
+            padding: 5px 10px;
+            color: $primary-text;
+            width: 100%;
+
+            &:hover,
+            &:focus{
+                border: 1px solid $primary;
+            }
+        }
+        textarea{
+            height: auto;
+        }
+    }
+
+    input.button{
+        @include buttons(#fff, $primary);
+
+        &[type="submit"]{
+            float: right;
+        }
+    }
+}

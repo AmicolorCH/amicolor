@@ -1,0 +1,14 @@
+@import 'mixins';
+@import 'colors';
+@import 'typography';
+@import 'forms';
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+@import 'intro/intro';
+@import 'contact/contact';
+@import 'layouts/footer';

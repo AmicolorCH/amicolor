@@ -1,0 +1,8 @@
+admin_config.admin:
+    path: '/admin/amicolor'
+    defaults:
+        # System Controller that list all links under this parent
+        _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+        _title: 'Outils - Amicolor'
+    requirements:
+        _permission: 'access administration pages'

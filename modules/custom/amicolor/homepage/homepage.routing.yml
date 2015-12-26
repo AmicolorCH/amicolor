@@ -1,0 +1,6 @@
+homepage.front:
+    path: '/homepage/front'
+    defaults:
+        _controller: '\Drupal\homepage\Controller\HomepageController::front'
+    requirements:
+        _permission: 'access content'

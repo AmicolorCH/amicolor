@@ -1,0 +1,24 @@
+contact.send:
+    path: '/contact/send'
+    defaults:
+        _controller: '\Drupal\contact\Controller\ContactController::send'
+        _title: 'Hello World'
+    requirements:
+        _permission: 'access content'
+contact.custom:
+    path: '/contact/custom'
+    defaults:
+        _controller: '\Drupal\contact\Controller\ContactController::custom'
+        _title: 'Hello World'
+    requirements:
+        _permission: 'access content'
+
+
+# Admin link
+contact.admin:
+    path: '/admin/amicolor/contact'
+    defaults:
+        _controller: '\Drupal\contact\Controller\ContactAdminController::admin'
+        _title: 'Administration - Contact'
+    requirements:
+        _permission: 'access administration pages'

@@ -1,0 +1,5 @@
+name: Amicolor - Admin config.
+description: 'Base Amicolor Admin module'
+package: Amicolor - Admin
+type: module
+core: 8.x

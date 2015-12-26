@@ -1,0 +1,6 @@
+admin_config.admin:
+    title: Outils - Amicolor
+    description: ''
+    parent: system.admin
+    route_name: admin_config.admin
+    weight: 100

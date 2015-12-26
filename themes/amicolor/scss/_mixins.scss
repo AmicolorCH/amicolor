@@ -1,0 +1,19 @@
+@mixin buttons($background, $foreground) {
+    font-size: 0.875rem;
+    color: $foreground;
+    background-color: $background;
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: $foreground;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 5px;
+
+    &:hover,
+    &:active,
+    &:focus{
+        color: $background;
+        background-color: $foreground;
+        border-color: $background;
+    }
+}

@@ -1,0 +1,22 @@
+.footer{
+    height: 55px;
+    background-color: $primary;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 20px;
+    margin-top: 65px;
+
+    .credits{
+        text-align: right;
+        max-width: 1200px;
+    }
+
+    a{
+        color: #fff;
+        &:hover,
+        &:active,
+        &:focus{
+            text-decoration: underline;
+        }
+    }
+}

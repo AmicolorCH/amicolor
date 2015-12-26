@@ -1,0 +1,8 @@
+# Admin link
+intro.admin:
+    path: '/admin/amicolor/intro'
+    defaults:
+        _controller: '\Drupal\intro\Controller\IntroAdminController::admin'
+        _title: 'Administration - Intro'
+    requirements:
+        _permission: 'access administration pages'

@@ -1,0 +1,6 @@
+contact.admin:
+    title: Contact
+    description: 'Administration du module: Contact'
+    parent: admin_config.admin
+    route_name: contact.admin
+    weight: 20

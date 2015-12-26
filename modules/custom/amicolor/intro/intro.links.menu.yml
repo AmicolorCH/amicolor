@@ -1,0 +1,6 @@
+intro.admin:
+    title: Intro
+    description: 'Administration du module: Intro'
+    parent: admin_config.admin
+    route_name: intro.admin
+    weight: 10
