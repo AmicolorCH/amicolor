@@ -24,7 +24,9 @@ a {
     a.button:hover, a.button:active, a.button:focus {
       color: #fff;
       background-color: #e9560d;
-      border-color: #fff; }
+      border-color: #fff;
+      outline: 0px !important;
+      -webkit-appearance: none; }
 
 .roboto {
   font-family: 'Roboto', sans-serif;
@@ -80,7 +82,9 @@ form input.button {
   form input.button:hover, form input.button:active, form input.button:focus {
     color: #fff;
     background-color: #e9560d;
-    border-color: #fff; }
+    border-color: #fff;
+    outline: 0px !important;
+    -webkit-appearance: none; }
   form input.button[type="submit"] {
     float: right; }
 
@@ -261,7 +265,9 @@ html {
             .works_block .works_list .work-hover .inner .call-to-action:hover, .works_block .works_list .work-hover .inner .call-to-action:active, .works_block .works_list .work-hover .inner .call-to-action:focus {
               color: #e9560d;
               background-color: #fff;
-              border-color: #e9560d; }
+              border-color: #e9560d;
+              outline: 0px !important;
+              -webkit-appearance: none; }
 
 .contact_block {
   font-size: 0.875rem;

@@ -15,6 +15,9 @@
         color: $background;
         background-color: $foreground;
         border-color: $background;
+        // remove the blue border
+        outline:0px !important;
+        -webkit-appearance:none;
     }
 }
 
