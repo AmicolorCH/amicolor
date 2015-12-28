@@ -1,3 +1,9 @@
 .intro_block{
-    margin: 60px 0;
+    margin: 20px 0;
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .intro_block{
+        margin-top: 45px;
+    }
 }

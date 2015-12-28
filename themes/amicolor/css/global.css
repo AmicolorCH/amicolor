@@ -131,7 +131,7 @@ html {
         text-align: center;
         width: 100%;
         padding: 0 20px;
-        top: 95px;
+        bottom: 20%;
         opacity: 0; }
         .sliders_block .flexslider .flex-viewport .slide .hangs .inner {
           max-width: 90%;
@@ -161,7 +161,8 @@ html {
       height: 400px; }
       .sliders_block .flexslider .flex-viewport .slide .hangs {
         font-size: 2.25rem;
-        top: 200px; }
+        top: 200px;
+        bottom: auto; }
         .sliders_block .flexslider .flex-viewport .slide .hangs .inner {
           max-width: 600px;
           margin: auto; }
@@ -169,7 +170,44 @@ html {
         height: 400px; } }
 
 .intro_block {
-  margin: 60px 0; }
+  margin: 20px 0; }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .intro_block {
+    margin-top: 45px; } }
+
+.partners_block {
+  background: #eeeeee;
+  padding-top: 30px;
+  padding-bottom: 50px; }
+  .partners_block .partners_list {
+    margin: 0;
+    margin-top: 30px; }
+    .partners_block .partners_list .partner {
+      padding: 20px;
+      background: #fff;
+      cursor: pointer;
+      -moz-transition: background-color .2s ease-in;
+      -webkit-transition: background-color .2s ease-in;
+      -o-transition: background-color .2s ease-in;
+      transition: background-color .2s ease-in; }
+      .partners_block .partners_list .partner-logo {
+        height: 60px;
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain; }
+      .partners_block .partners_list .partner:hover {
+        background: #cccccc; }
+
+.works_block {
+  background: #cccccc;
+  padding-top: 30px;
+  padding-bottom: 50px; }
 
 .contact_block {
   font-size: 0.875rem; }

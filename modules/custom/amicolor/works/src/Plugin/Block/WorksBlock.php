@@ -1,22 +1,22 @@
 <?php
 /**
 * @file
-* Contains \Drupal\sliders\Plugin\Block\SlidersBlock.
+* Contains \Drupal\works\Plugin\Block\WorksBlock.
 */
 
-namespace Drupal\sliders\Plugin\Block;
+namespace Drupal\works\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
 /**
-* Provides a 'Sliders' Block
+* Provides a 'Works' Block
 *
 * @Block(
-*   id = "sliders_block",
-*   admin_label = @Translation("Sliders block"),
+*   id = "works_block",
+*   admin_label = @Translation("Works block"),
 * )
 */
-class SlidersBlock extends BlockBase {
+class WorksBlock extends BlockBase {
     /**
     * {@inheritdoc}
     */
@@ -29,21 +29,21 @@ class SlidersBlock extends BlockBase {
             ->condition('status', 1)
             ->execute();
 
-        $sliders = $storage->loadMultiple($nids);
+        $works = $storage->loadMultiple($nids);
 
-        foreach ($sliders as $key => $slider) {
-            $variables['sliders'][] = array(
+        foreach ($works as $key => $slider) {
+            $variables['works'][] = array(
                 'hangs' => $slider->field_hangs->value,
                 'image' => $slider->field_background_image->entity->url(),
             );
         }
 
         return [
-            '#theme'     => 'sliders_block',
+            '#theme'     => 'works_block',
             '#variables' => $variables,
             '#attached'  => array(
                 'library' =>  array(
-                    'sliders/amicolor-sliders'
+                    'works/amicolor-works'
                 ),
             ),
         ];

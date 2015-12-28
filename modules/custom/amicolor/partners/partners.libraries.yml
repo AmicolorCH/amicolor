@@ -1,0 +1,6 @@
+amicolor-partners:
+    version: 1.0
+    js:
+        assets/js/partners.js: {}
+    dependencies:
+        - core/jquery

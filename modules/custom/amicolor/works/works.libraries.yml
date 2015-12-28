@@ -1,0 +1,6 @@
+amicolor-works:
+    version: 1.0
+    js:
+        assets/js/works.js: {}
+    dependencies:
+        - core/jquery

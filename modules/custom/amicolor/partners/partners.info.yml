@@ -1,0 +1,6 @@
+name: Partners
+description: 'Module des partenaires'
+package: Amicolor
+type: module
+version: 1.0
+core: 8.x

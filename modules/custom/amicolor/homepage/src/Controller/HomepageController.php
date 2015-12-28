@@ -21,6 +21,14 @@ class HomepageController {
           ->createInstance('intro_block', array())
           ->build();
 
+      $variables['works_block'] = \Drupal::service('plugin.manager.block')
+        ->createInstance('works_block', array())
+        ->build();
+
+      $variables['partners_block'] = \Drupal::service('plugin.manager.block')
+        ->createInstance('partners_block', array())
+        ->build();
+
         $variables['contact_block'] = \Drupal::service('plugin.manager.block')
           ->createInstance('contact_block', array())
           ->build();
