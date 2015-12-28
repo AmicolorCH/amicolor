@@ -100,21 +100,26 @@ html {
   .layouts_header_block .logo img {
     display: block;
     margin: auto;
-    margin-top: 20px;
-    height: auto;
-    width: 100%;
+    margin-top: 5px;
+    height: 50px;
+    width: auto;
     max-width: 210px; }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .layouts_header_block {
-    height: 145px; } }
+    height: 145px; }
+    .layouts_header_block .logo img {
+      margin-top: 20px;
+      height: auto;
+      width: 100%; } }
 
 .sliders_block {
   height: 285px;
   margin: 0; }
   .sliders_block .flexslider {
-    margin: 0; }
+    margin: 0;
+    border: 0; }
     .sliders_block .flexslider .flex-viewport .slide {
       height: 285px;
       position: relative; }
@@ -128,6 +133,9 @@ html {
         padding: 0 20px;
         top: 95px;
         opacity: 0; }
+        .sliders_block .flexslider .flex-viewport .slide .hangs .inner {
+          max-width: 90%;
+          margin: auto; }
       .sliders_block .flexslider .flex-viewport .slide .image {
         height: 285px;
         width: 100%;
@@ -154,6 +162,9 @@ html {
       .sliders_block .flexslider .flex-viewport .slide .hangs {
         font-size: 2.25rem;
         top: 200px; }
+        .sliders_block .flexslider .flex-viewport .slide .hangs .inner {
+          max-width: 600px;
+          margin: auto; }
       .sliders_block .flexslider .flex-viewport .slide .image {
         height: 400px; } }
 

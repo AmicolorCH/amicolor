@@ -3,7 +3,11 @@
         <ul class="slides">
             {% for slider in variables['sliders'] %}
             <li class="slide">
-                <div class="hangs roboto-light">{{ slider.hangs }}</div>
+                <div class="hangs roboto-light">
+                    <div class="inner">
+                        {{ slider.hangs }}
+                    </div>
+                </div>
                 <div class="image" style="background-image: url('{{ slider.image }}');"></div>
             </li>
             {% endfor %}

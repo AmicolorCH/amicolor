@@ -4,7 +4,8 @@
 
     .flexslider{
         margin: 0;
-
+        border: 0;
+    
         .flex-viewport{
             .slide{
                 height: 285px;
@@ -19,6 +20,10 @@
                     padding: 0 20px;
                     top: 95px;
                     opacity: 0;
+                    .inner{
+                        max-width: 90%;
+                        margin: auto;
+                    }
                 }
                 .image{
                     height: 285px;
@@ -60,6 +65,10 @@
                     .hangs{
                         font-size: 2.25rem;
                         top: 200px;
+                        .inner{
+                            max-width: 600px;
+                            margin: auto;
+                        }
                     }
                     .image{
                         height: 400px;
