@@ -23,6 +23,8 @@ class HeaderBlock extends BlockBase {
     public function build() {
         $variables = array();
 
+        $variables['logo'] = file_create_url(drupal_get_path('theme', 'amicolor') . '/images/logo.png');
+
         return [
             '#theme'     => 'layouts_header_block',
             '#variables' => $variables,

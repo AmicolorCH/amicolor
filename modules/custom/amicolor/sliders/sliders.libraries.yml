@@ -1,0 +1,10 @@
+amicolor-sliders:
+    version: 1.0
+    css:
+        theme:
+            assets/css/flexslider.css: {}
+    js:
+        assets/js/jquery.flexslider-min.js: {}
+        assets/js/sliders.js: {}
+    dependencies:
+        - core/jquery

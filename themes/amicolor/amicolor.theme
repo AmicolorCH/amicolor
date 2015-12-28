@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_node_view().
+ */
+function amicolor_preprocess_node(&$variables) {
+    $node = $variables['node'];
+    $redirection = false;
+    switch($node->getType()){
+        case 'slider_homepage':
+        default:
+            $redirection = '<front>';
+            break;
+    }
+    if($redirection!=false){
+        $response = new Symfony\Component\HttpFoundation\RedirectResponse(\Drupal::url($redirection));
+        $response->send();
+    }
+}

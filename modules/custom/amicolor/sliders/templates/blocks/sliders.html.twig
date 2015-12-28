@@ -1,10 +1,12 @@
-<div class="row {{ theme_hook_original }}">
-    <div class="col-md-6">
-        <h1>Qui sommes-nous ?</h1>
-        {{ variables['who_we_are'] | raw | nl2br }}
-    </div>
-    <div class="col-md-6">
-        <h1>Nos prestations :</h1>
-        {{ variables['bio'] | raw | nl2br }}
+<div class="{{ theme_hook_original }}">
+    <div class="flexslider">
+        <ul class="slides">
+            {% for slider in variables['sliders'] %}
+            <li class="slide">
+                <div class="hangs roboto-light">{{ slider.hangs }}</div>
+                <div class="image" style="background-image: url('{{ slider.image }}');"></div>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 </div>

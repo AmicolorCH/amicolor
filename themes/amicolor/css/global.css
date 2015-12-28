@@ -25,6 +25,18 @@ a {
       background-color: #e9560d;
       border-color: #fff; }
 
+.roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600; }
+
+.roboto-light {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
+.roboto-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; }
+
 form textarea:hover,
 form input:hover,
 form textarea:active,
@@ -75,6 +87,64 @@ html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px; }
 
+.layouts_header_block {
+  margin: 0;
+  background: rgba(255, 255, 255, 0.7);
+  height: 145px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  border-bottom: 2px solid #e9560d; }
+
+.sliders_block {
+  height: 285px;
+  margin: 0; }
+  .sliders_block .flexslider {
+    margin: 0; }
+    .sliders_block .flexslider .flex-viewport .slide {
+      height: 285px;
+      position: relative; }
+      .sliders_block .flexslider .flex-viewport .slide .hangs {
+        font-size: 1.875rem;
+        line-height: 2rem;
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+        top: 95px;
+        opacity: 0; }
+      .sliders_block .flexslider .flex-viewport .slide .image {
+        height: 285px;
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+    .sliders_block .flexslider .flex-control-nav {
+      bottom: 0; }
+      .sliders_block .flexslider .flex-control-nav li a {
+        background: #a99e9e; }
+        .sliders_block .flexslider .flex-control-nav li a.flex-active {
+          background: #e9560d;
+          cursor: default; }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .sliders_block {
+    height: 400px; }
+    .sliders_block .flexslider .flex-viewport .slide {
+      height: 400px; }
+      .sliders_block .flexslider .flex-viewport .slide .hangs {
+        font-size: 2.25rem;
+        top: 200px; }
+      .sliders_block .flexslider .flex-viewport .slide .image {
+        height: 400px; } }
+
 .intro_block {
   margin: 60px 0; }
 
@@ -85,17 +155,18 @@ html {
     .contact_block .buttons .button {
       margin-top: 15px; }
 
-.footer {
+.layouts_footer_block {
+  margin: 0;
   height: 55px;
   background-color: #e9560d;
   color: #fff;
   font-size: 0.75rem;
   padding: 20px;
   margin-top: 65px; }
-  .footer .credits {
+  .layouts_footer_block .credits {
     text-align: right;
     max-width: 1200px; }
-  .footer a {
+  .layouts_footer_block a {
     color: #fff; }
-    .footer a:hover, .footer a:active, .footer a:focus {
+    .layouts_footer_block a:hover, .layouts_footer_block a:active, .layouts_footer_block a:focus {
       text-decoration: underline; }

@@ -37,3 +37,7 @@ sites/simpletest
 
 # Ignore NPM Modules.
 node_modules
+
+# Ignore Generated CSS excepted libraries
+themes/amicolor/css/*
+!themes/amicolor/css/vendor/*

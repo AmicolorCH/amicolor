@@ -17,11 +17,6 @@ class HomepageController {
     public function front() {
         $variables = array();
 
-
-        $variables['sliders_block'] = \Drupal::service('plugin.manager.block')
-          ->createInstance('sliders_block', array())
-          ->build();
-
         $variables['intro_block'] = \Drupal::service('plugin.manager.block')
           ->createInstance('intro_block', array())
           ->build();

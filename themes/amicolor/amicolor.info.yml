@@ -5,10 +5,16 @@ core: 8.x
 screenshot: screenshot.png
 
 libraries:
-  - amicolor/base
-  - core/normalize
-  
+    - amicolor/base
+    - core/normalize
+
+stylesheets-remove:
+    - core/assets/vendor/normalize-css/normalize.css
+    - core/modules/system/css/system.module.css
+    - core/modules/system/css/system.theme.css
+    - core/modules/views/css/views.module.css
+
 regions:
-  header: Header
-  content: Content
-  footer: Footer
+    header: Header
+    content: Content
+    footer: Footer

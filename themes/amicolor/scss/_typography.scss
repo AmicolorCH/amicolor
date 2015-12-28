@@ -21,3 +21,16 @@ a{
         @include buttons(#fff, $primary);
     }
 }
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.roboto-light{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.roboto-bold{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}

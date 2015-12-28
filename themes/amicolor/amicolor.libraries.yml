@@ -5,13 +5,12 @@ base:
         layout:
             https://fonts.googleapis.com/css?family=Roboto:400,300,700: { type: external }
             https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css: { type: external }
-        components:
-            css/bootstrap.min.css: {}
         theme:
+            css/vendor/bootstrap.min.css: {}
             css/global.css: {}
     js:
         js/bootstrap.min.js: {}
 
     dependencies:
         - core/jquery
-        - core/drupal 
+        - core/drupal
