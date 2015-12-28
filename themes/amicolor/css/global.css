@@ -90,13 +90,25 @@ html {
 .layouts_header_block {
   margin: 0;
   background: rgba(255, 255, 255, 0.7);
-  height: 145px;
+  height: 65px;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 10;
   left: 0;
   border-bottom: 2px solid #e9560d; }
+  .layouts_header_block .logo img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    max-width: 210px; }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .layouts_header_block {
+    height: 145px; } }
 
 .sliders_block {
   height: 285px;
