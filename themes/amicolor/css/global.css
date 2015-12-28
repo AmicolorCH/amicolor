@@ -247,12 +247,19 @@ html {
         position: absolute;
         top: 0;
         opacity: 0;
-        background: #e9560d;
         color: #fff;
         width: 100%;
         height: 100%;
         padding: 20px;
         text-align: center; }
+        .works_block .works_list .work-hover .overlay {
+          opacity: .9;
+          background: #e9560d;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0; }
         .works_block .works_list .work-hover .inner {
           position: relative;
           top: 50%;

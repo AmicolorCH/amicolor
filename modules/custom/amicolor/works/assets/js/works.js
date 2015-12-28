@@ -3,7 +3,7 @@
     // Shorthand for $( document ).ready()
     $(function() {
         $(document).on('mouseenter', '.works_block .works_list .work', function(){
-            $(this).find('.work-hover').animate({opacity: .9}, 200);
+            $(this).find('.work-hover').animate({opacity: 1}, 200);
         });
         $(document).on('mouseleave', '.works_block .works_list .work', function(){
             $(this).find('.work-hover').animate({opacity: 0}, 150);

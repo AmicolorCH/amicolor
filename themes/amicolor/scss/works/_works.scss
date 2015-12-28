@@ -34,13 +34,21 @@
                 position: absolute;
                 top: 0;
                 opacity: 0;
-                background: $primary;
                 color: #fff;
                 width: 100%;
                 height: 100%;
                 padding: 20px;
                 text-align: center;
 
+                .overlay{
+                    opacity: .9;
+                    background: $primary;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
                 .inner{
                     @include vertical-align();
 
