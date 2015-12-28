@@ -31,9 +31,10 @@ class PartnersBlock extends BlockBase {
 
         $partners = $storage->loadMultiple($nids);
 
-        foreach ($partners as $key => $slider) {
+        foreach ($partners as $key => $partner) {
             $variables['partners'][] = array(
-                'image' => $slider->field_logo->entity->url(),
+                'image' => $partner->field_logo->entity->url(),
+                'url'   => '$partner->field_lien',
             );
         }
 
