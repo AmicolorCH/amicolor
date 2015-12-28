@@ -34,7 +34,7 @@ class PartnersBlock extends BlockBase {
         foreach ($partners as $key => $partner) {
             $variables['partners'][] = array(
                 'image' => $partner->field_logo->entity->url(),
-                'url'   => '$partner->field_lien',
+                'url'   => $partner->field_lien->uri,
             );
         }
 

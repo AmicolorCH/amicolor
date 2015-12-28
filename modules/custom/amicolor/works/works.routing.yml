@@ -1,0 +1,6 @@
+works.detail:
+    path: '/works/detail/{node}'
+    defaults:
+        _controller: '\Drupal\works\Controller\WorksController::detail'
+    requirements:
+        _permission: 'access content'

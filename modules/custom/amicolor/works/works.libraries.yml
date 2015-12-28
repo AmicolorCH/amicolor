@@ -1,6 +1,10 @@
 amicolor-works:
     version: 1.0
+    css:
+        theme:
+            assets/css/magnific-popup.css: {}
     js:
         assets/js/works.js: {}
+        assets/js/jquery.magnific-popup.min.js: {}
     dependencies:
         - core/jquery

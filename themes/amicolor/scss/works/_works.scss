@@ -1,5 +1,60 @@
 .works_block{
     background: $secondary;
+    margin-top: 40px;
     padding-top: 30px;
     padding-bottom: 50px;
+
+    .works_list{
+        margin: 0;
+        margin-top: 30px;
+
+        .work{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            cursor: pointer;
+             -moz-transition: background-color .2s ease-in;
+             -webkit-transition: background-color .2s ease-in;
+             -o-transition: background-color .2s ease-in;
+             transition: background-color .2s ease-in;
+
+
+            &-cover{
+                height: 215px;
+                width: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            &-hover{
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                background: $primary;
+                color: #fff;
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+                text-align: center;
+
+                .inner{
+                    @include vertical-align();
+
+                    .call-to-action{
+                        opacity: 1;
+                        @include buttons($primary, #fff);
+                    }
+                }
+            }
+            //
+            // &:hover{
+            //     background: $secondary;
+            // }
+        }
+    }
+
 }
