@@ -1,4 +1,3 @@
-/* Mixin */
 body {
   color: #000;
   font-size: 16px; }
@@ -20,7 +19,11 @@ a {
     border-color: #e9560d;
     padding: 5px 10px;
     display: inline-block;
-    margin-top: 5px; }
+    margin-top: 5px;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in; }
     a.button:hover, a.button:active, a.button:focus {
       color: #fff;
       background-color: #e9560d;
@@ -78,7 +81,11 @@ form input.button {
   border-color: #e9560d;
   padding: 5px 10px;
   display: inline-block;
-  margin-top: 5px; }
+  margin-top: 5px;
+  -moz-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in; }
   form input.button:hover, form input.button:active, form input.button:focus {
     color: #fff;
     background-color: #e9560d;
@@ -261,7 +268,11 @@ html {
             border-color: #fff;
             padding: 5px 10px;
             display: inline-block;
-            margin-top: 5px; }
+            margin-top: 5px;
+            -moz-transition: all .2s ease-in;
+            -webkit-transition: all .2s ease-in;
+            -o-transition: all .2s ease-in;
+            transition: all .2s ease-in; }
             .works_block .works_list .work-hover .inner .call-to-action:hover, .works_block .works_list .work-hover .inner .call-to-action:active, .works_block .works_list .work-hover .inner .call-to-action:focus {
               color: #e9560d;
               background-color: #fff;
@@ -272,6 +283,8 @@ html {
 .works_detail {
   max-width: 600px;
   margin: auto; }
+  .works_detail .close {
+    cursor: pointer; }
   .works_detail .detail {
     text-align: center; }
 
