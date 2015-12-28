@@ -7,6 +7,7 @@
 namespace Drupal\layouts\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use \Drupal\Core\Menu\MenuTreeParameters;
 
 /**
 * Provides a 'Layouts' Block
@@ -24,6 +25,18 @@ class HeaderBlock extends BlockBase {
         $variables = array();
 
         $variables['logo'] = file_create_url(drupal_get_path('theme', 'amicolor') . '/images/logo.png');
+
+        $parameters = new MenuTreeParameters();
+        $parameters->setMaxDepth(1)->onlyEnabledLinks();
+        $menu = \Drupal::menuTree()->load('main', $parameters);
+
+        foreach ($menu as $key => $value) {
+            $variables['menu'][$value->link->getWeight()] = array(
+                'title' => $value->link->getTitle(),
+                'url'   => $value->link->getUrlObject()->toString()
+            );
+        }
+        ksort($variables['menu']);
 
         return [
             '#theme'     => 'layouts_header_block',

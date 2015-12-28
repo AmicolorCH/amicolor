@@ -4,7 +4,13 @@
         <img src="{{ variables['logo'] }}" alt="Logo Amicolor" />
     </div>
     <div class="hidden-xs col-sm-8 main-menu">
-
+        <ul class="menu">
+            {% for link in variables['menu'] %}
+            <li class="link">
+                <a class="roboto-bold" href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 
 </div>
