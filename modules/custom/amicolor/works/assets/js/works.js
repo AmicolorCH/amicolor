@@ -23,5 +23,11 @@
             }
         });
 
+        $(document).on('click', '.mfp-content .works_detail .close .mfp-content .works_detail .close', function(event){
+            event.preventDefault();
+            $.magnificPopup.close();
+        });
+
+
     });
 })(jQuery, Drupal, window);

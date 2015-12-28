@@ -272,6 +272,8 @@ html {
 .works_detail {
   max-width: 600px;
   margin: auto; }
+  .works_detail .detail {
+    text-align: center; }
 
 .contact_block {
   font-size: 0.875rem;

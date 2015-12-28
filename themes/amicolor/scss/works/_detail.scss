@@ -1,6 +1,11 @@
 .works_detail{
     max-width: 600px;
     margin: auto;
+
+    .close{
+        cursor: pointer;
+    }
+
     .detail{
         text-align: center;
     }
