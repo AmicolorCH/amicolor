@@ -41,6 +41,11 @@ class HeaderBlock extends BlockBase {
         return [
             '#theme'     => 'layouts_header_block',
             '#variables' => $variables,
+            '#attached'  => array(
+                'library' =>  array(
+                    'layouts/amicolor-layouts-header'
+                ),
+            ),
         ];
     }
 

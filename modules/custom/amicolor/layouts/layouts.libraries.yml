@@ -1,0 +1,7 @@
+amicolor-layouts-header:
+    version: 1.0
+    js:
+        assets/js/header.js: {}
+        assets/js/jquery.smooth-scroll.min.js: {}
+    dependencies:
+        - core/jquery

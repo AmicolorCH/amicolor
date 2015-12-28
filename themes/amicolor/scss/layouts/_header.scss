@@ -9,38 +9,43 @@
     left: 0;
     border-bottom: 2px solid $primary;
 
-    .logo{
-        img{
-            display: block;
-            margin: auto;
-            margin-top: 5px;
-            height: 50px;
-            width: auto;
-            max-width: 210px;
+    .container{
+        height: 100%;
+
+        .logo{
+            img{
+                display: block;
+                margin: auto;
+                margin-top: 5px;
+                height: 50px;
+                width: auto;
+                max-width: 210px;
+            }
         }
-    }
 
-    .main-menu{
-        @include vertical-align();
-        ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            li{
-                display: inline-block;
-                margin-right: 20px;
+        .main-menu{
+            @include vertical-align();
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    display: inline-block;
+                    margin-right: 20px;
 
-                &:last-child(){
-                    margin-right: 0;
-                }
-                a{
-                    display: block;
-                    color: #000;
+                    &:last-child(){
+                        margin-right: 0;
+                    }
+                    a{
+                        display: block;
+                        color: #000;
+                        font-size: 1.125rem;
 
-                    &:hover,
-                    &:active,
-                    &:focus{
-                        color: $primary;
+                        &:hover,
+                        &:active,
+                        &:focus{
+                            color: $primary;
+                        }
                     }
                 }
             }
@@ -53,11 +58,13 @@
 @media only screen and (min-width : 768px) {
     .layouts_header_block{
         height: 145px;
-        .logo{
-            img{
-                margin-top: 20px;
-                height: auto;
-                width: 100%;
+        .container{
+            .logo{
+                img{
+                    margin-top: 20px;
+                    height: auto;
+                    width: 100%;
+                }
             }
         }
     }

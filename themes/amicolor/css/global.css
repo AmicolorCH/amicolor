@@ -109,39 +109,42 @@ html {
   z-index: 10;
   left: 0;
   border-bottom: 2px solid #e9560d; }
-  .layouts_header_block .logo img {
-    display: block;
-    margin: auto;
-    margin-top: 5px;
-    height: 50px;
-    width: auto;
-    max-width: 210px; }
-  .layouts_header_block .main-menu {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    .layouts_header_block .main-menu ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0; }
-      .layouts_header_block .main-menu ul li {
-        display: inline-block;
-        margin-right: 20px; }
-        .layouts_header_block .main-menu ul li:last-child() {
-          margin-right: 0; }
-        .layouts_header_block .main-menu ul li a {
-          display: block;
-          color: #000; }
-          .layouts_header_block .main-menu ul li a:hover, .layouts_header_block .main-menu ul li a:active, .layouts_header_block .main-menu ul li a:focus {
-            color: #e9560d; }
+  .layouts_header_block .container {
+    height: 100%; }
+    .layouts_header_block .container .logo img {
+      display: block;
+      margin: auto;
+      margin-top: 5px;
+      height: 50px;
+      width: auto;
+      max-width: 210px; }
+    .layouts_header_block .container .main-menu {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .layouts_header_block .container .main-menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0; }
+        .layouts_header_block .container .main-menu ul li {
+          display: inline-block;
+          margin-right: 20px; }
+          .layouts_header_block .container .main-menu ul li:last-child() {
+            margin-right: 0; }
+          .layouts_header_block .container .main-menu ul li a {
+            display: block;
+            color: #000;
+            font-size: 1.125rem; }
+            .layouts_header_block .container .main-menu ul li a:hover, .layouts_header_block .container .main-menu ul li a:active, .layouts_header_block .container .main-menu ul li a:focus {
+              color: #e9560d; }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .layouts_header_block {
     height: 145px; }
-    .layouts_header_block .logo img {
+    .layouts_header_block .container .logo img {
       margin-top: 20px;
       height: auto;
       width: 100%; } }
