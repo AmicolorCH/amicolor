@@ -1,3 +1,14 @@
 <div class="{{ theme_hook_original }}">
-DETAIL DE OUF TA MERE
+
+    <a class="works_detail-prev {{ variables['work']['prev'] ? 'enabled' : 'disabled' }}" href="{{ variables['work']['prev'] }}">
+        <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="works_detail-next {{ variables['work']['next'] ? 'enabled' : 'disabled' }}" href="{{ variables['work']['next'] }}">
+        <i class="fa fa-angle-right"></i>
+    </a>
+
+    <div class="detail">
+        <img src="{{ variables['work']['image'] }}" />
+    </div>
+
 </div>

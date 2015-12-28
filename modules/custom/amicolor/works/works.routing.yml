@@ -1,6 +1,9 @@
 works.detail:
-    path: '/works/detail/{node}'
+    path: '/works/detail/{node}/{delta}'
     defaults:
         _controller: '\Drupal\works\Controller\WorksController::detail'
+        # All keys under the defaults section which do not start with an underscore will be passed in as arguments to the controller.
+        # In this case, we create default value for delta to 0
+        delta: 0
     requirements:
         _permission: 'access content'

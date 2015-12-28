@@ -269,6 +269,10 @@ html {
               outline: 0px !important;
               -webkit-appearance: none; }
 
+.works_detail {
+  max-width: 600px;
+  margin: auto; }
+
 .contact_block {
   font-size: 0.875rem;
   margin-top: 40px; }
