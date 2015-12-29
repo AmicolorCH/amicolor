@@ -11,19 +11,20 @@
         cursor: pointer;
         position: absolute;
         font-size: 30px;
-        top: -35px;
+        top: 0;
         color: #fff;
-        right: 0;
+        right: 35px;
     }
 
     .detail{
         text-align: center;
-        background: #fff;
-        padding: 50px;
+        padding: 35px;
 
         img{
             width: 100%;
             height: auto;
+            background: #fff;
+            padding: 25px;
         }
 
     }
@@ -42,9 +43,9 @@
     }
 
     .works_detail-prev{
-        left: -40px;
+        left: 0;
     }
     .works_detail-next{
-        right: -40px;
+        right: 0;
     }
 }

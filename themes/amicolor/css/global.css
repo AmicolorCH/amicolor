@@ -334,11 +334,12 @@ html {
     right: 0; }
   .works_detail .detail {
     text-align: center;
-    background: #fff;
-    padding: 50px; }
+    padding: 20px; }
     .works_detail .detail img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      background: #fff;
+      padding: 50px; }
   .works_detail .works_detail-prev,
   .works_detail .works_detail-next {
     color: #fff;
@@ -350,9 +351,9 @@ html {
     .works_detail .works_detail-next.disabled {
       color: #cccccc; }
   .works_detail .works_detail-prev {
-    left: -40px; }
+    left: 0; }
   .works_detail .works_detail-next {
-    right: -40px; }
+    right: 0; }
 
 .contact_block {
   font-size: 0.875rem;
