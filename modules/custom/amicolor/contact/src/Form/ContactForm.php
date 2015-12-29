@@ -23,6 +23,22 @@ class ContactForm extends FormBase {
     * {@inheritdoc}
     */
     public function buildForm(array $form, FormStateInterface $form_state, $extra = NULL) {
+        if( isset($_SESSION['contact_form']['thanks']) ){
+            $form['success'] = array(
+                '#prefix'        => '<div class="alert alert-success" role="alert">' . $_SESSION['contact_form']['thanks'],
+                '#suffix'        => '</div>',
+            );
+            unset($_SESSION['contact_form']['thanks']);
+        }
+
+        // $tempstore = \Drupal::service('user.private_tempstore')->get('contact');
+        // $form_submit = $tempstore->get('contact_form_submit');
+        // if( isset($form_submit) AND !empty($form_submit) ){
+        //     $form['success'] = array(
+        //         '#prefix'        => '<div class="alert alert-success" role="alert">' . $form_submit->__toString(),
+        //         '#suffix'        => '</div>',
+        //     );
+        // }
 
         $form['#action'] = '#contact';
 
@@ -116,7 +132,15 @@ class ContactForm extends FormBase {
         $params['phone']     = $form_state->getValue('phone');
         $params['message']   = $form_state->getValue('message');
 
-        \Drupal::service('plugin.manager.mail')->mail('contact', 'contact_us', $to, 'fr', $params, $params['email']);
+        // \Drupal::service('plugin.manager.mail')->mail('contact', 'contact_us', $to, 'fr', $params, $params['email']);
+
+        $_SESSION['contact_form']['thanks'] = t('Merci beaucoup pour votre message. Vous recevrez un email de notre part sous peu.');
+
+        // $tempstore = \Drupal::service('user.private_tempstore')->get('contact');
+        // $tempstore->set('contact_form_submit', t('Merci beaucoup pour votre message. Vous recevrez un email de notre part sous peu.'));
+
+        // Mark this page as being uncacheable.
+        //  \Drupal::service('page_cache_kill_switch')->trigger();
     }
 
 
