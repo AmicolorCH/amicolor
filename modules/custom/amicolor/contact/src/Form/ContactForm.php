@@ -23,6 +23,9 @@ class ContactForm extends FormBase {
     * {@inheritdoc}
     */
     public function buildForm(array $form, FormStateInterface $form_state, $extra = NULL) {
+
+        $form['#action'] = '#contact';
+
         $form['step_1'] = array(
             '#prefix'        => '<div class="row">',
             '#suffix'        => '</div>',
@@ -104,12 +107,16 @@ class ContactForm extends FormBase {
     */
     public function submitForm(array &$form, FormStateInterface $form_state) {
 
-        $form_state->getValue('lastname');
-        $form_state->getValue('firstname');
-        $form_state->getValue('email');
-        $form_state->getValue('phone');
-        $form_state->getValue('message');
+        $params['lastname'] = $form_state->getValue('lastname');
+        $params['firstname'] = $form_state->getValue('firstname');
+        $params['email'] = $form_state->getValue('email');
+        $params['phone'] = $form_state->getValue('phone');
+        $params['message'] = $form_state->getValue('message');
 
+        // $to = $form_state->getValue('email');
+        $to = 'wenger.kev@gmail.com';
+
+        \Drupal::service('plugin.manager.mail')->mail('contact', 'contact_us', $to, 'fr', $params);
 
         return parent::submitForm($form, $form_state);
     }

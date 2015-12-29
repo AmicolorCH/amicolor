@@ -69,6 +69,8 @@ form .form-group {
     width: 100%; }
     form .form-group input:hover, form .form-group input:focus, form .form-group textarea:hover, form .form-group textarea:focus {
       border: 1px solid #e9560d; }
+    form .form-group input.error, form .form-group textarea.error {
+      border-color: #F70404; }
   form .form-group textarea {
     height: auto; }
 

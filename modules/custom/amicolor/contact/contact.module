@@ -36,3 +36,17 @@ function contact_theme($existing, $type, $theme, $path) {
         ),
     );
 }
+
+
+/**
+* Mail hook
+*/
+function contact_mail($key, &$message, $params) {
+    $options['langcode'] = $message['langcode'];
+    switch($key) {
+        case 'contact_us':
+            $message['subject'] = t('Notification from amicolor');
+            $message['body'][] = t("Dear is new content available on the site.");
+        break;
+    }
+}
