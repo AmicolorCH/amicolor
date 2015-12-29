@@ -43,6 +43,13 @@ class ContactAdminForm extends ConfigFormBase {
             '#default_value' => $config->get('contact.address')
         );
 
+        $form['mail'] = array(
+            '#type'          => 'textfield',
+            '#title'         => $this->t('Réception des mails de contact'),
+            '#default_value' => $config->get('contact.mail')
+        );
+
+
         $form['googlemap'] = array(
             '#type'          => 'textfield',
             '#title'         => $this->t('Lien Google Map'),
@@ -75,6 +82,7 @@ class ContactAdminForm extends ConfigFormBase {
         $config = $this->config('contact.settings');
 
         $config->set('contact.address', $form_state->getValue('address'));
+        $config->set('contact.mail', $form_state->getValue('mail'));
         $config->set('contact.googlemap', $form_state->getValue('googlemap'));
         $config->set('contact.facebook', $form_state->getValue('facebook'));
 

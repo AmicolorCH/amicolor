@@ -1,12 +1,50 @@
 .works_detail{
     max-width: 600px;
     margin: auto;
+    position: relative;
+
+    .mfp-close{
+        display: none;
+    }
 
     .close{
         cursor: pointer;
+        position: absolute;
+        font-size: 30px;
+        top: -35px;
+        color: #fff;
+        right: 0;
     }
 
     .detail{
         text-align: center;
+        background: #fff;
+        padding: 50px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .works_detail-prev,
+    .works_detail-next{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        margin-top: -40px;
+        font-size: 80px;
+
+        &.disabled{
+            color: $secondary;
+        }
+    }
+
+    .works_detail-prev{
+        left: -40px;
+    }
+    .works_detail-next{
+        right: -40px;
     }
 }

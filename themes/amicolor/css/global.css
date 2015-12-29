@@ -317,11 +317,38 @@ html {
 
 .works_detail {
   max-width: 600px;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
+  .works_detail .mfp-close {
+    display: none; }
   .works_detail .close {
-    cursor: pointer; }
+    cursor: pointer;
+    position: absolute;
+    font-size: 30px;
+    top: -35px;
+    color: #fff;
+    right: 0; }
   .works_detail .detail {
-    text-align: center; }
+    text-align: center;
+    background: #fff;
+    padding: 50px; }
+    .works_detail .detail img {
+      width: 100%;
+      height: auto; }
+  .works_detail .works_detail-prev,
+  .works_detail .works_detail-next {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    font-size: 80px; }
+    .works_detail .works_detail-prev.disabled,
+    .works_detail .works_detail-next.disabled {
+      color: #cccccc; }
+  .works_detail .works_detail-prev {
+    left: -40px; }
+  .works_detail .works_detail-next {
+    right: -40px; }
 
 .contact_block {
   font-size: 0.875rem;

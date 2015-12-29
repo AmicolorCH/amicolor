@@ -19,6 +19,7 @@
                   items: {
                       src: url
                   },
+                  tLoading: 'Chargement des photos...',
                 }, 0);
             }
         });
