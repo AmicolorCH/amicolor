@@ -111,15 +111,16 @@ class ContactForm extends FormBase {
         // $to = $config->get('contact.mail');
         $to = 'wenger.kev@gmail.com';
 
-        $params['lastname'] = $form_state->getValue('lastname');
+        $params['from']      = 'contact@amicolor.ch';
+        $params['lastname']  = $form_state->getValue('lastname');
         $params['firstname'] = $form_state->getValue('firstname');
-        $params['email'] = $form_state->getValue('email');
-        $params['phone'] = $form_state->getValue('phone');
-        $params['message'] = $form_state->getValue('message');
+        $params['email']     = $form_state->getValue('email');
+        $params['phone']     = $form_state->getValue('phone');
+        $params['message']   = $form_state->getValue('message');
 
-        \Drupal::service('plugin.manager.mail')->mail('contact', 'contact_us', $to, 'fr', $params);
+        \Drupal::service('plugin.manager.mail')->mail('contact', 'contact_us', $to, 'fr', $params, $params['email']);
 
-        return parent::submitForm($form, $form_state);
+        // return parent::submitForm($form, $form_state);
     }
 
 

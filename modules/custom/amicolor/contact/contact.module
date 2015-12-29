@@ -43,10 +43,22 @@ function contact_theme($existing, $type, $theme, $path) {
 */
 function contact_mail($key, &$message, $params) {
     $options['langcode'] = $message['langcode'];
+
+    if( isset($params['from']) AND !empty($params['from']) ){
+        $message['from'] = $params['from'];
+    }
+
     switch($key) {
         case 'contact_us':
-            $message['subject'] = t('Notification from amicolor');
-            $message['body'][] = t("Dear is new content available on the site.");
+
+            $message['subject'] = t('Demande de contact depuis Amicolor.ch');
+            $message['body'][] = t("Nouvelle demande de contact.");
+            $message['body'][] = t("Nom: ") . $params['lastname'];
+            $message['body'][] = t("Prénom: ") . $params['firstname'];
+            $message['body'][] = t("Email: ") . $params['email'];
+            $message['body'][] = t("Téléphone: ") . $params['phone'];
+            $message['body'][] = t("Message: ");
+            $message['body'][] = $params['message'];
         break;
     }
 }
