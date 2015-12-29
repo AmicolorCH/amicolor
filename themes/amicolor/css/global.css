@@ -329,17 +329,17 @@ html {
     cursor: pointer;
     position: absolute;
     font-size: 30px;
-    top: -35px;
+    top: 0;
     color: #fff;
-    right: 0; }
+    right: 35px; }
   .works_detail .detail {
     text-align: center;
-    padding: 20px; }
+    padding: 35px; }
     .works_detail .detail img {
       width: 100%;
       height: auto;
       background: #fff;
-      padding: 50px; }
+      padding: 25px; }
   .works_detail .works_detail-prev,
   .works_detail .works_detail-next {
     color: #fff;
