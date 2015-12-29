@@ -108,10 +108,8 @@ class ContactForm extends FormBase {
     public function submitForm(array &$form, FormStateInterface $form_state) {
 
         $config = \Drupal::config('contact.settings');
-        // $to = $config->get('contact.mail');
-        $to = 'wenger.kev@gmail.com';
+        $to = $config->get('contact.mail');
 
-        $params['from']      = 'contact@amicolor.ch';
         $params['lastname']  = $form_state->getValue('lastname');
         $params['firstname'] = $form_state->getValue('firstname');
         $params['email']     = $form_state->getValue('email');
@@ -119,8 +117,6 @@ class ContactForm extends FormBase {
         $params['message']   = $form_state->getValue('message');
 
         \Drupal::service('plugin.manager.mail')->mail('contact', 'contact_us', $to, 'fr', $params, $params['email']);
-
-        // return parent::submitForm($form, $form_state);
     }
 
 
