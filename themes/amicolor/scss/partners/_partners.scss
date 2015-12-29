@@ -8,27 +8,30 @@
         margin-top: 30px;
 
         .partner{
-            padding: 20px;
-            background: #fff;
-            cursor: pointer;
-            -moz-transition: background-color .2s ease-in;
-            -webkit-transition: background-color .2s ease-in;
-            -o-transition: background-color .2s ease-in;
-            transition: background-color .2s ease-in;
+            .inner{
+                background: #fff;
+                cursor: pointer;
+                -moz-transition: background-color .2s ease-in;
+                -webkit-transition: background-color .2s ease-in;
+                -o-transition: background-color .2s ease-in;
+                transition: background-color .2s ease-in;
+                margin-right: 10px;
+                padding: 20px;
 
-            &-logo{
-                height: 60px;
-                width: 100%;
-                background-position: center center;
-                background-repeat: no-repeat;
-                -webkit-background-size: contain;
-                -moz-background-size: contain;
-                -o-background-size: contain;
-                background-size: contain;
-            }
+                .partner-logo{
+                    height: 60px;
+                    width: 100%;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    -webkit-background-size: contain;
+                    -moz-background-size: contain;
+                    -o-background-size: contain;
+                    background-size: contain;
+                }
 
-            &:hover{
-                background: $secondary;
+                &:hover{
+                    background: $secondary;
+                }
             }
         }
     }

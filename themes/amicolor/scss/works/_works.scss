@@ -9,59 +9,57 @@
         margin-top: 30px;
 
         .work{
-            padding: 0;
-            margin: 0;
-            position: relative;
-            cursor: pointer;
-             -moz-transition: background-color .2s ease-in;
-             -webkit-transition: background-color .2s ease-in;
-             -o-transition: background-color .2s ease-in;
-             transition: background-color .2s ease-in;
+            .inner{
+                padding: 0;
+                margin: 0;
+                position: relative;
+                cursor: pointer;
+                 -moz-transition: background-color .2s ease-in;
+                 -webkit-transition: background-color .2s ease-in;
+                 -o-transition: background-color .2s ease-in;
+                 transition: background-color .2s ease-in;
+                 margin-right: 10px;
 
-
-            &-cover{
-                height: 215px;
-                width: 100%;
-                background-position: center center;
-                background-repeat: no-repeat;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-            }
-
-            &-hover{
-                position: absolute;
-                top: 0;
-                opacity: 0;
-                color: #fff;
-                width: 100%;
-                height: 100%;
-                padding: 20px;
-                text-align: center;
-
-                .overlay{
-                    opacity: .9;
-                    background: $primary;
+                .work-cover{
+                    height: 215px;
                     width: 100%;
-                    height: 100%;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+
+                .work-hover{
                     position: absolute;
                     top: 0;
-                    left: 0;
-                }
-                .inner{
-                    @include vertical-align();
+                    opacity: 0;
+                    color: #fff;
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px;
+                    text-align: center;
 
-                    .call-to-action{
-                        opacity: 1;
-                        @include buttons($primary, #fff);
+                    .overlay{
+                        opacity: .9;
+                        background: $primary;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .inner{
+                        @include vertical-align();
+
+                        .call-to-action{
+                            opacity: 1;
+                            @include buttons($primary, #fff);
+                        }
                     }
                 }
             }
-            //
-            // &:hover{
-            //     background: $secondary;
-            // }
         }
     }
 
