@@ -16,6 +16,7 @@
                 -o-transition: background-color .2s ease-in;
                 transition: background-color .2s ease-in;
                 margin-right: 10px;
+                margin-top: 10px;
                 padding: 20px;
 
                 .partner-logo{
@@ -31,6 +32,10 @@
 
                 &:hover{
                     background: $secondary;
+                }
+
+                &:nth-child(n+2){
+                    margin-top: 10px;
                 }
             }
         }
