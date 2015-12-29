@@ -132,7 +132,7 @@ class ContactForm extends FormBase {
         $params['phone']     = $form_state->getValue('phone');
         $params['message']   = $form_state->getValue('message');
 
-        // \Drupal::service('plugin.manager.mail')->mail('contact', 'contact_us', $to, 'fr', $params, $params['email']);
+        \Drupal::service('plugin.manager.mail')->mail('contact', 'contact_us', $to, 'fr', $params, $params['email']);
 
         $_SESSION['contact_form']['thanks'] = t('Merci beaucoup pour votre message. Vous recevrez un email de notre part sous peu.');
 
