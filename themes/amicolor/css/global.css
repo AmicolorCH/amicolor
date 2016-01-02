@@ -23,7 +23,8 @@ a {
     -moz-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
-    transition: all .2s ease-in; }
+    transition: all .2s ease-in;
+    width: auto; }
     a.button:hover, a.button:active, a.button:focus {
       color: #fff;
       background-color: #e9560d;
@@ -91,7 +92,8 @@ form input.button {
   -moz-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
-  transition: all .2s ease-in; }
+  transition: all .2s ease-in;
+  width: auto; }
   form input.button:hover, form input.button:active, form input.button:focus {
     color: #fff;
     background-color: #e9560d;
@@ -328,7 +330,8 @@ html {
             -moz-transition: all .2s ease-in;
             -webkit-transition: all .2s ease-in;
             -o-transition: all .2s ease-in;
-            transition: all .2s ease-in; }
+            transition: all .2s ease-in;
+            width: auto; }
             .works_block .works_list .work .inner-work .work-hover .inner-work-hover .call-to-action:hover, .works_block .works_list .work .inner-work .work-hover .inner-work-hover .call-to-action:active, .works_block .works_list .work .inner-work .work-hover .inner-work-hover .call-to-action:focus {
               color: #e9560d;
               background-color: #fff;
