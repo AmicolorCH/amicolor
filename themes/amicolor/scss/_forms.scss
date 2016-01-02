@@ -14,7 +14,8 @@ form{
         -webkit-appearance:none;
     }
 
-    .form-group{
+    .form-group,
+    .form-item{
         margin-top: 20px;
 
         .label{
@@ -22,27 +23,26 @@ form{
             font-size: 0.875rem;
             margin-bottom: 5px;
         }
-        input, textarea{
-            border: 1px solid $secondary;
-            height: 35px;
-            padding: 5px 10px;
-            color: $primary-text;
-            width: 100%;
+    }
 
-            &:hover,
-            &:focus{
-                border: 1px solid $primary;
-            }
+    input, textarea{
+        border: 1px solid $secondary;
+        height: 35px;
+        padding: 5px 10px;
+        color: $primary-text;
+        width: 100%;
 
-            &.error{
-                border-color: $error;
-            }
-        }
-        textarea{
-            height: auto;
+        &:hover,
+        &:focus{
+            border: 1px solid $primary;
         }
 
-
+        &.error{
+            border-color: $error;
+        }
+    }
+    textarea{
+        height: auto;
     }
 
     input.button{

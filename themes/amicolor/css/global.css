@@ -55,24 +55,28 @@ form button:hover {
   outline: 0px !important;
   -webkit-appearance: none; }
 
-form .form-group {
+form .form-group,
+form .form-item {
   margin-top: 20px; }
-  form .form-group .label {
+  form .form-group .label,
+  form .form-item .label {
     color: #000;
     font-size: 0.875rem;
     margin-bottom: 5px; }
-  form .form-group input, form .form-group textarea {
-    border: 1px solid #cccccc;
-    height: 35px;
-    padding: 5px 10px;
-    color: #000;
-    width: 100%; }
-    form .form-group input:hover, form .form-group input:focus, form .form-group textarea:hover, form .form-group textarea:focus {
-      border: 1px solid #e9560d; }
-    form .form-group input.error, form .form-group textarea.error {
-      border-color: #F70404; }
-  form .form-group textarea {
-    height: auto; }
+
+form input, form textarea {
+  border: 1px solid #cccccc;
+  height: 35px;
+  padding: 5px 10px;
+  color: #000;
+  width: 100%; }
+  form input:hover, form input:focus, form textarea:hover, form textarea:focus {
+    border: 1px solid #e9560d; }
+  form input.error, form textarea.error {
+    border-color: #F70404; }
+
+form textarea {
+  height: auto; }
 
 form input.button {
   font-size: 0.875rem;
@@ -96,6 +100,10 @@ form input.button {
     -webkit-appearance: none; }
   form input.button[type="submit"] {
     float: right; }
+
+#user-login-form {
+  width: 800px;
+  margin: 30px auto 0 auto; }
 
 html {
   font-family: 'Roboto', sans-serif;
