@@ -168,8 +168,13 @@ html {
         text-align: center;
         width: 100%;
         padding: 0 20px;
-        bottom: 20%;
-        opacity: 0; }
+        bottom: 5%;
+        opacity: 0;
+        /* Extra Small Devices, Phones */
+        /* Large Devices, Wide Screens */ }
+        @media only screen and (min-width: 480px) {
+          .sliders_block .flexslider .flex-viewport .slide .hangs {
+            bottom: 10%; } }
         .sliders_block .flexslider .flex-viewport .slide .hangs .inner {
           max-width: 90%;
           margin: auto; }
@@ -220,8 +225,7 @@ html {
   padding-top: 30px;
   padding-bottom: 50px; }
   .partners_block .partners_list {
-    margin: 0;
-    margin-top: 30px; }
+    margin: 0; }
     .partners_block .partners_list .partner .inner {
       background: #fff;
       cursor: pointer;
@@ -229,8 +233,7 @@ html {
       -webkit-transition: background-color .2s ease-in;
       -o-transition: background-color .2s ease-in;
       transition: background-color .2s ease-in;
-      margin-right: 10px;
-      margin-top: 10px;
+      margin-top: 30px;
       padding: 20px; }
       .partners_block .partners_list .partner .inner .partner-logo {
         height: 60px;
@@ -252,9 +255,8 @@ html {
   padding-top: 30px;
   padding-bottom: 50px; }
   .works_block .works_list {
-    margin: 0;
-    margin-top: 30px; }
-    .works_block .works_list .work .inner {
+    margin: 0; }
+    .works_block .works_list .work .inner-work {
       padding: 0;
       margin: 0;
       position: relative;
@@ -263,18 +265,25 @@ html {
       -webkit-transition: background-color .2s ease-in;
       -o-transition: background-color .2s ease-in;
       transition: background-color .2s ease-in;
-      margin-right: 10px;
-      margin-top: 10px; }
-      .works_block .works_list .work .inner .work-cover {
-        height: 215px;
+      margin-top: 30px; }
+      .works_block .works_list .work .inner-work .work-cover {
+        height: 125px;
         width: 100%;
         background-position: center center;
         background-repeat: no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover; }
-      .works_block .works_list .work .inner .work-hover {
+        background-size: cover;
+        /* Small Devices, Tablets */
+        /* Medium Devices, Desktops */ }
+        @media only screen and (min-width: 768px) {
+          .works_block .works_list .work .inner-work .work-cover {
+            height: 140px; } }
+        @media only screen and (min-width: 992px) {
+          .works_block .works_list .work .inner-work .work-cover {
+            height: 215px; } }
+      .works_block .works_list .work .inner-work .work-hover {
         position: absolute;
         top: 0;
         opacity: 0;
@@ -283,7 +292,7 @@ html {
         height: 100%;
         padding: 20px;
         text-align: center; }
-        .works_block .works_list .work .inner .work-hover .overlay {
+        .works_block .works_list .work .inner-work .work-hover .overlay {
           opacity: .9;
           background: #e9560d;
           width: 100%;
@@ -291,13 +300,13 @@ html {
           position: absolute;
           top: 0;
           left: 0; }
-        .works_block .works_list .work .inner .work-hover .inner {
+        .works_block .works_list .work .inner-work .work-hover .inner-work-hover {
           position: relative;
           top: 50%;
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
-          .works_block .works_list .work .inner .work-hover .inner .call-to-action {
+          .works_block .works_list .work .inner-work .work-hover .inner-work-hover .call-to-action {
             opacity: 1;
             font-size: 0.875rem;
             color: #fff;
@@ -312,7 +321,7 @@ html {
             -webkit-transition: all .2s ease-in;
             -o-transition: all .2s ease-in;
             transition: all .2s ease-in; }
-            .works_block .works_list .work .inner .work-hover .inner .call-to-action:hover, .works_block .works_list .work .inner .work-hover .inner .call-to-action:active, .works_block .works_list .work .inner .work-hover .inner .call-to-action:focus {
+            .works_block .works_list .work .inner-work .work-hover .inner-work-hover .call-to-action:hover, .works_block .works_list .work .inner-work .work-hover .inner-work-hover .call-to-action:active, .works_block .works_list .work .inner-work .work-hover .inner-work-hover .call-to-action:focus {
               color: #e9560d;
               background-color: #fff;
               border-color: #e9560d;

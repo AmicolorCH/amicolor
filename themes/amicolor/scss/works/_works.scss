@@ -6,10 +6,9 @@
 
     .works_list{
         margin: 0;
-        margin-top: 30px;
 
         .work{
-            .inner{
+            .inner-work{
                 padding: 0;
                 margin: 0;
                 position: relative;
@@ -18,11 +17,10 @@
                  -webkit-transition: background-color .2s ease-in;
                  -o-transition: background-color .2s ease-in;
                  transition: background-color .2s ease-in;
-                 margin-right: 10px;
-                 margin-top: 10px;
+                 margin-top: 30px;
 
                 .work-cover{
-                    height: 215px;
+                    height: 125px;
                     width: 100%;
                     background-position: center center;
                     background-repeat: no-repeat;
@@ -30,6 +28,16 @@
                     -moz-background-size: cover;
                     -o-background-size: cover;
                     background-size: cover;
+
+                    /* Small Devices, Tablets */
+                    @media only screen and (min-width : 768px) {
+                        height: 140px;
+                    }
+
+                    /* Medium Devices, Desktops */
+                    @media only screen and (min-width : 992px) {
+                        height: 215px;
+                    }
                 }
 
                 .work-hover{
@@ -51,7 +59,7 @@
                         top: 0;
                         left: 0;
                     }
-                    .inner{
+                    .inner-work-hover{
                         @include vertical-align();
 
                         .call-to-action{
@@ -63,5 +71,4 @@
             }
         }
     }
-
 }
