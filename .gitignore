@@ -8,12 +8,16 @@
 # name; updating Drupal core will not override your custom .gitignore file.
 
 # Ignore core and vendor when managing dependencies with Composer.
-core
-vendor
+# core
+# vendor
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
 sites/*/services*.yml
+
+!sites/default/settings.php
+!sites/default/settings.local.php
+!sites/default/services.yml
 
 # Ignore paths that contain user-generated content.
 sites/*/files
@@ -35,9 +39,10 @@ sites/simpletest
 # Ignore SimpleTest multi-site environment.
 # simpletest
 
-# Ignore NPM Modules.
-node_modules
+# Ignore CSS, every thing is generated via SCSS.
+themes/*/css/*
+# Keep CSS Vendors
+!themes/*/css/vendor
 
-# Ignore Generated CSS excepted libraries
-themes/amicolor/css/*
-!themes/amicolor/css/vendor/
+# Ignore NPM
+node_modules/

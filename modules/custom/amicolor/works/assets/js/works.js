@@ -9,7 +9,7 @@
             $(this).find('.work-hover').animate({opacity: 0}, 150);
         });
 
-        $(document).on('click', '.works_block .works_list .work-hover .inner .call-to-action, .mfp-content .works_detail .works_detail-prev, .mfp-content .works_detail .works_detail-next', function(event){
+        $(document).on('click', '.works_block .works_list .work .inner-work .work-hover .inner-work-hover .call-to-action, .mfp-content .works_detail .works_detail-prev, .mfp-content .works_detail .works_detail-next', function(event){
             event.preventDefault();
             var url = $(this).attr('href');
 
