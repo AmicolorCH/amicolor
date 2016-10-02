@@ -1,0 +1,38 @@
+uuid: 3a18915f-9ad9-4e64-8c08-95bc8d3ac3d4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background_image
+    - node.type.slider_homepage
+  module:
+    - image
+id: node.slider_homepage.field_background_image
+field_name: field_background_image
+entity_type: node
+bundle: slider_homepage
+label: 'Image de fond'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

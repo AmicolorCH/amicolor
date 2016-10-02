@@ -1,0 +1,15 @@
+uuid: dd4c2ae1-2852-48ea-bdf2-3d75b245b955
+langcode: fr
+status: true
+dependencies:
+  module:
+    - image_effects
+name: amicolor_exif_auto_orientation
+label: 'EXIF Auto orientation'
+effects:
+  6f18955f-c0ee-40cc-a5a7-3db432961fd4:
+    uuid: 6f18955f-c0ee-40cc-a5a7-3db432961fd4
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true

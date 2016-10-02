@@ -1,0 +1,23 @@
+uuid: 849d2e4e-dd7a-46e6-ad0d-ae1ea09cbd84
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lien
+    - node.type.partners
+  module:
+    - link
+id: node.partners.field_lien
+field_name: field_lien
+entity_type: node
+bundle: partners
+label: Lien
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

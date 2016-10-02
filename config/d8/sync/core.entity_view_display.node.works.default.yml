@@ -1,0 +1,46 @@
+uuid: da074650-38bf-40b4-9259-8332dc52cd69
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.works.field_cover_image
+    - field.field.node.works.field_gallery
+    - field.field.node.works.field_worked_at
+    - node.type.works
+  module:
+    - datetime
+    - image
+    - user
+id: node.works.default
+targetEntityType: node
+bundle: works
+mode: default
+content:
+  field_cover_image:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_gallery:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_worked_at:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  links:
+    weight: 100
+hidden:
+  langcode: true

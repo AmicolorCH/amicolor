@@ -1,0 +1,20 @@
+uuid: 4f963845-c03f-4d45-83eb-d3e3e9b55ad9
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - amicolor
+id: amicolor_powered
+theme: amicolor
+region: '-1'
+weight: 1
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Propulsé par Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 18070315-fe26-42af-9e7f-b3eee3083dd6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hangs
+    - node.type.slider_homepage
+id: node.slider_homepage.field_hangs
+field_name: field_hangs
+entity_type: node
+bundle: slider_homepage
+label: Accroche
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

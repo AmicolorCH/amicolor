@@ -1,0 +1,24 @@
+uuid: deb5f923-2d6b-4a17-b4d3-43018eeb2f25
+langcode: fr
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - amicolor
+id: amicolor_account_menu
+theme: amicolor
+region: '-1'
+weight: -4
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menu du compte de l''utilisateur'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

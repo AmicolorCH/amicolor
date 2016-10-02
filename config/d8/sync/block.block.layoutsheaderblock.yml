@@ -1,0 +1,20 @@
+uuid: 3309cde8-6013-4db6-b154-f62bb61d9a39
+langcode: fr
+status: true
+dependencies:
+  module:
+    - layouts
+  theme:
+    - amicolor
+id: layoutsheaderblock
+theme: amicolor
+region: header
+weight: -7
+provider: null
+plugin: layouts_header_block
+settings:
+  id: layouts_header_block
+  label: 'Layouts Header block'
+  provider: layouts
+  label_display: '0'
+visibility: {  }

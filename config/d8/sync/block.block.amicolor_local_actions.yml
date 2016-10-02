@@ -1,0 +1,18 @@
+uuid: a92ebcb0-b0aa-44a1-b3e6-e0d6969dd577
+langcode: fr
+status: false
+dependencies:
+  theme:
+    - amicolor
+id: amicolor_local_actions
+theme: amicolor
+region: '-1'
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

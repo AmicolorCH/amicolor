@@ -1,0 +1,10 @@
+uuid: c9520ddf-543b-4ce3-bd55-5ae4289c1d78
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.register
+label: 'S''inscrire'
+targetEntityType: user
+cache: true

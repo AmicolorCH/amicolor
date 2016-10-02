@@ -1,0 +1,20 @@
+uuid: 1a122609-badd-49e3-9e9e-120aad1a0645
+langcode: fr
+status: true
+dependencies:
+  module:
+    - layouts
+  theme:
+    - amicolor
+id: layoutsfooterblock
+theme: amicolor
+region: footer
+weight: -8
+provider: null
+plugin: layouts_footer_block
+settings:
+  id: layouts_footer_block
+  label: 'Layouts Footer block'
+  provider: layouts
+  label_display: '0'
+visibility: {  }

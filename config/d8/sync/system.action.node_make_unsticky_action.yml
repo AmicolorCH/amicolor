@@ -1,0 +1,11 @@
+uuid: d6a41f8f-f930-49af-a21b-2069ea6e9c2f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node_make_unsticky_action
+label: 'Retirer un contenu du haut des listes'
+type: node
+plugin: node_make_unsticky_action
+configuration: {  }

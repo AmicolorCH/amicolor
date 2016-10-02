@@ -1,0 +1,18 @@
+uuid: add16721-3377-48e5-8b74-19197fbf9cf7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.slider_homepage
+  module:
+    - user
+id: node.slider_homepage.teaser
+targetEntityType: node
+bundle: slider_homepage
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  langcode: true

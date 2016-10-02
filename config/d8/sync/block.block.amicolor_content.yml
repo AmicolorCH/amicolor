@@ -1,0 +1,20 @@
+uuid: 653cf0dc-9ad3-46cc-b790-69395b8de18e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - amicolor
+id: amicolor_content
+theme: amicolor
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }

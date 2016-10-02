@@ -95,6 +95,33 @@ To rebuild automatically when files change
   $ gulp sass:watch
   ```
 
+## Deploy
+The deployment of branch `dev` and `master` is automatically managed by Codeship!
+
+
+### First time
+
+  ```bash
+  # You need to have ruby & bundler installed
+  $ bundle install
+  $ npm install -g gulp
+  ```
+
+The remote server need `drush` and `composer` to be installed locally, we have tasks for this !
+
+  ```bash
+  $ bundle exec cap production composer:install_executable
+  $ bundle exec cap production drush:install
+  ```
+### Each times
+
+We use Capistrano to deploy:
+
+  ```bash
+  $ bundle exec cap -T
+  $ bundle exec cap production deploy
+  ```
+
 ## Troubleshootings
 
 ### Error while importing config ?

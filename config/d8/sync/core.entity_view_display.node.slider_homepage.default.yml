@@ -1,0 +1,48 @@
+uuid: 720c4c24-fca0-428a-adc3-5c85f582e809
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.slider_homepage.field_background_image
+    - field.field.node.slider_homepage.field_hangs
+    - field.field.node.slider_homepage.field_lien
+    - node.type.slider_homepage
+  module:
+    - image
+    - link
+    - user
+id: node.slider_homepage.default
+targetEntityType: node
+bundle: slider_homepage
+mode: default
+content:
+  field_background_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_hangs:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_lien:
+    weight: 101
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+hidden:
+  langcode: true

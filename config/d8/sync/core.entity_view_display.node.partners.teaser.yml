@@ -1,0 +1,18 @@
+uuid: ac5d8d7b-a7b4-4b18-a68b-0462b16325b4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.partners
+  module:
+    - user
+id: node.partners.teaser
+targetEntityType: node
+bundle: partners
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  langcode: true

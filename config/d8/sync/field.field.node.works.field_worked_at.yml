@@ -1,0 +1,24 @@
+uuid: 09a6cfe9-f590-451f-8954-fa80919782ba
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_worked_at
+    - node.type.works
+  module:
+    - datetime
+id: node.works.field_worked_at
+field_name: field_worked_at
+entity_type: node
+bundle: works
+label: 'Date de travaux'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

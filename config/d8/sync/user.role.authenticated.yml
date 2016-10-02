@@ -1,0 +1,17 @@
+uuid: 965ffac4-d4e2-4473-a114-8df6e53af8f8
+langcode: fr
+status: true
+dependencies: {  }
+id: authenticated
+label: 'Utilisateur authentifié'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format basic_html'
+  - 'access comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'access site-wide contact form'
+  - 'access shortcuts'
+  - 'search content'

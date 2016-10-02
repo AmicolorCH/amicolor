@@ -1,0 +1,20 @@
+uuid: eab8d665-fbad-4ec8-8ea5-43f3c6d5cdea
+langcode: fr
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - amicolor
+id: amicolor_help
+theme: amicolor
+region: '-1'
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aide
+  provider: help
+  label_display: '0'
+visibility: {  }

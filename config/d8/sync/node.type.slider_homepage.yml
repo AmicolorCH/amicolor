@@ -1,0 +1,17 @@
+uuid: 50991f90-dadd-46c6-b94e-03d33bb6f084
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Diaporama page d''accueil'
+type: slider_homepage
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,7 @@
+demo:
+  email_address: test@gmail.com
+contact:
+  address: "Route de Baumaroche 34\r\n1801 Mont-Pèlerin\r\n\r\n+41 (0)78 669 73 92"
+  googlemap: 'https://www.google.ch/maps/place/Route+de+Baumaroche+34,+1801+Chardonne/@46.4822745,6.8267366,17z/data=!3m1!4b1!4m2!3m1!1s0x478e'
+  facebook: 'https://www.facebook.com/Amicolor.ch/'
+  mail: amicolor.ch@gmail.com

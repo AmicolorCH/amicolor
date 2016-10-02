@@ -1,0 +1,8 @@
+uuid: 561593aa-5739-42da-9e45-cdc63ec0e577
+langcode: fr
+status: true
+dependencies: {  }
+id: short
+label: 'Date courte par défaut'
+locked: false
+pattern: 'd/m/Y - H:i'

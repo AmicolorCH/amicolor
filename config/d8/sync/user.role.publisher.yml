@@ -1,0 +1,48 @@
+uuid: ab473dcf-28b3-44f1-80e9-4a60d9aa6e41
+langcode: fr
+status: true
+dependencies: {  }
+id: publisher
+label: publisher
+weight: 3
+is_admin: null
+permissions:
+  - 'translate interface'
+  - 'access content overview'
+  - 'administer nodes'
+  - 'view own unpublished content'
+  - 'access content'
+  - 'create slider_homepage content'
+  - 'delete any slider_homepage content'
+  - 'delete own slider_homepage content'
+  - 'delete slider_homepage revisions'
+  - 'edit any slider_homepage content'
+  - 'edit own slider_homepage content'
+  - 'revert slider_homepage revisions'
+  - 'view slider_homepage revisions'
+  - 'create partners content'
+  - 'delete any partners content'
+  - 'delete own partners content'
+  - 'delete partners revisions'
+  - 'edit any partners content'
+  - 'edit own partners content'
+  - 'revert partners revisions'
+  - 'view partners revisions'
+  - 'create works content'
+  - 'delete any works content'
+  - 'delete own works content'
+  - 'delete works revisions'
+  - 'edit any works content'
+  - 'edit own works content'
+  - 'revert works revisions'
+  - 'view works revisions'
+  - 'administer shortcuts'
+  - 'access shortcuts'
+  - 'administer menu'
+  - 'administer site configuration'
+  - 'access administration pages'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'view the administration theme'
+  - 'access toolbar'
+  - 'access user profiles'

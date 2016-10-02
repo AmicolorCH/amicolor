@@ -1,0 +1,23 @@
+uuid: 01cf84be-00e8-42f2-b8d9-17d5b1164e57
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lien
+    - node.type.slider_homepage
+  module:
+    - link
+id: node.slider_homepage.field_lien
+field_name: field_lien
+entity_type: node
+bundle: slider_homepage
+label: Lien
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

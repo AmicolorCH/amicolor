@@ -1,0 +1,20 @@
+uuid: cfb03e6a-b24b-4d8b-a3d7-ab27dcf876c8
+langcode: fr
+status: false
+dependencies:
+  theme:
+    - amicolor
+id: amicolor_local_tasks
+theme: amicolor
+region: '-1'
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

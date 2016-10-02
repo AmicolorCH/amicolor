@@ -1,0 +1,11 @@
+uuid: 7fed67d4-2750-4a39-8307-1ac53811b641
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.slider_homepage
+id: node.slider_homepage
+target_entity_type_id: node
+target_bundle: slider_homepage
+default_langcode: site_default
+language_alterable: false

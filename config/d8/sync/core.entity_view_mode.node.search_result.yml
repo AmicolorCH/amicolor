@@ -1,0 +1,10 @@
+uuid: d2393f71-5874-4630-8fe6-3e979a06daf9
+langcode: fr
+status: false
+dependencies:
+  module:
+    - node
+id: node.search_result
+label: 'Effectuer une recherche en mettant en évidence les données saisies'
+targetEntityType: node
+cache: true

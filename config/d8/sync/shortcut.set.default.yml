@@ -1,0 +1,6 @@
+uuid: 088d3c4a-b06a-4a8d-8a30-5d13a4719559
+langcode: fr
+status: true
+dependencies: {  }
+id: default
+label: 'Par défaut'

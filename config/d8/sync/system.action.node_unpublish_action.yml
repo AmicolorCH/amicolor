@@ -1,0 +1,11 @@
+uuid: e247c5e5-cfa4-44f4-963a-8e2fcd7cb48c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node_unpublish_action
+label: 'Dépublier un contenu'
+type: node
+plugin: node_unpublish_action
+configuration: {  }

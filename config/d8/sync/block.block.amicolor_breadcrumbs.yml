@@ -1,0 +1,20 @@
+uuid: 2750f849-e59d-4adf-aafe-7e1274588ce2
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - amicolor
+id: amicolor_breadcrumbs
+theme: amicolor
+region: '-1'
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Fils d''Ariane'
+  provider: system
+  label_display: '0'
+visibility: {  }

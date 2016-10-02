@@ -1,0 +1,24 @@
+uuid: d0f80123-ab83-423e-aad6-e672f64a1ade
+langcode: fr
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - amicolor
+id: amicolor_main_menu
+theme: amicolor
+region: '-1'
+weight: -3
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navigation principale'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

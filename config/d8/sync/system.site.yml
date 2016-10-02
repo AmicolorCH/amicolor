@@ -1,0 +1,13 @@
+uuid: b7cd2fe7-2a75-46b7-b812-e23cfa91b300
+name: Amicolor
+mail: you@yourdomain
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /homepage/front
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+mail_notification: ''

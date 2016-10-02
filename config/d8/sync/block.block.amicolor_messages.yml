@@ -1,0 +1,20 @@
+uuid: d2f0f723-9673-4589-a9c4-434fdcd96666
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - amicolor
+id: amicolor_messages
+theme: amicolor
+region: '-1'
+weight: 3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messages de statut'
+  provider: system
+  label_display: '0'
+visibility: {  }
